@@ -11,6 +11,12 @@ By implementing the Game of Life, the project demonstrates key OOP paradigms:
 
 - **Polymorphism**: Designing adaptable interfaces for different simulation modes.
 
+The simulation is built using an HMI (Human-Machine Interface) architecture, as shown in the diagram below. This layered design promotes separation of concerns, flexibility, and extensibility.
+
+- The **Components Layer** contains the core game logic, including the `Cell` and `Grid` classes.
+- The **Service Layer** provides the `GameOfLifeBase` class, which serves as the connection between the components and the higher-level interfaces.
+- The **Interface Layer** includes the `GameOfLifeConsole` and `GameOfLifeGraphic` classes, which implement the console-based and graphical user interfaces, respectively.
+
 ## Rules
 
 1. **Underpopulation**: A live cell with fewer than two live neighbors dies.
