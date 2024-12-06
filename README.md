@@ -84,7 +84,7 @@ The input file should contain the initial configuration of the grid. The format 
 2. **Subsequent Lines**: Represent the grid's initial cell states, where:
    - `0` indicates a dead cell.
    - `1` indicates a live cell.
-3. **Unspeciified States**: Setting the grid size to values larger than the provided number of rows and columns sets the unspecified cells to a dead state by default.
+3. **Unspeciified States**: Setting the grid size to values larger than the provided number of rows and columns sets the unspecified cells to a dead state by default. Alternatively, settign the grid size to values smaller than provided ignores the additional rows and columns.
   - Example :
  ```
 4 4
@@ -92,7 +92,6 @@ The input file should contain the initial configuration of the grid. The format 
 0 0 0 0
 0 1 1 0
 0 1 1 0
-0 0 0 0
 ```
 
 ### Running Unit Tests
