@@ -76,6 +76,24 @@ Parameters:
   - `graphic`: Graphical window simulation
 - `[output_dir]`: Optional. Directory to save output files
 
+### Input File Format
+
+The input file should contain the initial configuration of the grid. The format is as follows:
+
+1. **First Line**: Specifies the grid size as two integers separated by a space: `<rows> <columns>` (e.g., `40 60` for a 40x60 grid).
+2. **Subsequent Lines**: Represent the grid's initial cell states, where:
+   - `0` indicates a dead cell.
+   - `1` indicates a live cell.
+3. **Unspeciified States**: Setting the grid size to values larger than the provided number of rows and columns sets the unspecified cells to a dead state by default.
+  - Example :
+ ```
+4 4
+0 0 0 0
+0 0 0 0
+0 1 1 0
+0 1 1 0
+0 0 0 0
+```
 
 ### Running Unit Tests
 
