@@ -2,7 +2,12 @@
 
 ## Overview
 
-Conway's Game of Life is a cellular automaton where cells on a grid evolve based on simple rules of survival, death, and reproduction.
+Conway's Game of Life is a cellular automaton simulation crafted as a deep dive into modern C++ object-oriented programming (OOP) principles. This project serves as a practical exploration of advanced C++ concepts.
+By implementing the Game of Life, the project demonstrates key OOP paradigms:
+
+Inheritance: Creating flexible, extensible class hierarchies
+Encapsulation: Protecting data integrity through controlled access
+Polymorphism: Designing adaptable interfaces for different simulation modes
 
 ## Rules
 
@@ -49,13 +54,19 @@ Build the project using the Makefile:
 make
 ```
 
-
 ### Running the Simulation
 
-
+Usage:
 ```bash
-./game_of_life
+./game_of_life <input_file> <mode> [output_dir]
 ```
+
+Parameters:
+- `<input_file>`: Path to the initial grid configuration file
+- `<mode>`: Simulation display mode
+  - `console`: Text-based grid display
+  - `graphic`: Graphical window simulation
+- `[output_dir]`: Optional. Directory to save output files
 
 
 ### Running Unit Tests
@@ -64,6 +75,3 @@ make
 make test
 ./test_game_of_life
 ```
-
-
-New York 🫡
