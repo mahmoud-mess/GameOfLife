@@ -5,9 +5,9 @@
 Conway's Game of Life is a cellular automaton simulation crafted as a deep dive into modern C++ object-oriented programming (OOP) principles. This project serves as a practical exploration of advanced C++ concepts.
 By implementing the Game of Life, the project demonstrates key OOP paradigms:
 
-Inheritance: Creating flexible, extensible class hierarchies
-Encapsulation: Protecting data integrity through controlled access
-Polymorphism: Designing adaptable interfaces for different simulation modes
+**Inheritance**: Creating flexible, extensible class hierarchies.
+**Encapsulation**: Protecting data integrity through controlled access.
+**Polymorphism**: Designing adaptable interfaces for different simulation modes.
 
 ## Rules
 
