@@ -77,3 +77,11 @@ Parameters:
 make test
 ./test_game_of_life
 ```
+#### Test Coverage
+Unit tests validate critical aspects of the simulation:
+- Toroidal grid wrap-around functionality
+  - Verify edge cells correctly count neighbors across grid boundaries
+  - Ensure wrap-around logic maintains consistent cell neighborhood rules
+- Grid iteration verification
+  - Compare generated grid states against pre-computed expected iterations
+  - Validate that cellular evolution follows Game of Life rules precisely
